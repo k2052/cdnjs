@@ -8,17 +8,15 @@ Search and URL retrieval from cdnjs
 
 A search and URL retrieval tool for [cdnjs](//cdnjs.com). It can be used globally on your command line, or as a module.
 
-Its version 3.2.0 powers the [pulldown-api](https://github.com/phuu/pulldown-api).
+## About this fork
 
-## About version 4.0.0
-
-Version 4.0.0 is a complete rewrite of this application, so if you were using the module and upgrade blindly, things will most likely break. The good news is that it now uses the official API of cdnjs.com and thus, it is now fast as hell !
+This fork is a complete rewrite of the [original application](https://github.com/phuu/cdnjs), so if you were using the module and upgrade blindly, things will most likely break. The good news is that it uses the official API of cdnjs.com and thus, it is fast as hell !
 
 ## Command-line tool
 
 Install `cdnjs` globally:
 
-`npm install -g cdnjs`
+`npm install -g alexjab/cdnjs`
 
 ### Update
 
@@ -93,6 +91,8 @@ Install via npm:
 `npm install cdnjs`
 
 ### Methods
+
+You can find use examples in [examples.js](https://github.com/alexjab/cdnjs/blob/master/example.js)
 
 #### #libraries ([search], [fields], callback)
 
