@@ -4,7 +4,7 @@ Search and URL retrieval from cdnjs
 
 ![terminal](http://i.imgur.com/QJ0gnLT.gif)
 
-[![build status](https://secure.travis-ci.org/phuu/cdnjs.png)](http://travis-ci.org/phuu/cdnjs)
+[![Circle CI](https://circleci.com/gh/alexjab/cdnjs.svg?style=svg)](https://circleci.com/gh/alexjab/cdnjs)
 
 A search and URL retrieval tool for [cdnjs](//cdnjs.com). It can be used globally on your command line, or as a module.
 
