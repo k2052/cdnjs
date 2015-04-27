@@ -156,13 +156,11 @@ if (method === 'update') {
   });
 } else if (method === 'url') {
   getPersistence (function (libraries) {
-    console.log (colors.blue ('  Getting url for '), colors.green (term));
     var req = cdnjs.extractTerm (term);
     cdnjs.url (libraries, req.name, req.version, function (err, url, version) {
-      console.log (colors.blue ('  Result: \n'));
       if (!err) {
         if (url) {
-          console.log (colors.green (pad (req.name + (version ? '@' + version : ''), req.name.length)) + colors.grey (': ' + url));
+          console.log(url);
         } else {
           console.log ('  No result found for library', colors.green (req.name), version ? ('with version ' + colors.green (req.version)) : '');
           if (version && version !== req.version) {
@@ -177,4 +175,3 @@ if (method === 'update') {
 } else {
   console.error (colors.red ('  Unknown command ' + method + '. Run `cdnjs --help` for a list of available commands.'));
 }
-
